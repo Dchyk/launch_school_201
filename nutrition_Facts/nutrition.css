@@ -1,0 +1,219 @@
+/*
+----------------------------------------
+Tantek Celik's Whitepsace Reset
+     Author:    Tantek Celik, Shane Riley
+    Version:    (CC) 2010 Some Rights Reserved - http://creativecommons.org/licenses/by/2.0
+Description:  Resets default styling of common browsers to a common base
+----------------------------------------
+*/
+
+ul,ol { list-style: none; }
+h1,h2,h3,h4,h5,h6,pre,code { font-size: 1em; }
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input,dl,dt,dd, figure, figcaption {
+  margin: 0;
+  padding: 0; }
+a img,:link img,:visited img, fieldset { border: none; }
+address { font-style: normal; }
+header, section, article, nav, footer, hgroup, details, summary, figure, main { display: block; }
+mark {
+  color: inherit;
+  background: transparent; }
+abbr { border: none; }
+summary::-webkit-details-marker { display: none; }
+
+/* --------------------------------------------------- **
+   Nutrition Facts Label  ******************************/
+
+body {
+  font: 28px normal Helvetica, Arial, sans-serif;
+  line-height: 2rem;
+}
+
+h1 {
+  font-size: 62px;
+  padding: 24px 0 12px 12px;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: normal;
+  box-sizing: border-box;
+  padding: 0 0 0 12px;
+}
+
+h3:last-of-type {
+  padding-bottom: 8px;
+}
+
+main {
+  width: 684px;
+  border: 2px solid #000;
+  margin: 8px;
+  padding: 0 0 12px 0;
+  box-sizing: border-box;
+}
+
+section h2 {
+  display: block;
+  width: 652px;
+  border-top: 32px solid #000;
+  border-bottom: 1px solid #000;
+  margin: 0 12px;
+  padding: 8px 0;
+}
+
+section dl {
+  width: 339px;
+  padding: 8px 12px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+section dl, 
+section dl dd,
+section dl dt {
+  display: inline-block;
+}
+
+section > dl:last-of-type {
+  text-align: right;
+}
+
+section table dl:first-of-type {
+  padding: 0 0 0 12px;
+}
+
+section dl:first-of-type dt {
+  font-weight: 600;
+}
+
+section table dl:last-of-type {
+  text-align: right;
+  margin: 0 12px 0 0;
+}
+
+section:before,
+section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+section {
+  clear: both;
+  *zoom: 1;
+}
+
+/* % Daily Value Table */
+
+section table thead {
+  border-top: 16px solid #000;
+}
+
+section table,
+main > table,
+footer table {
+  clear: right;
+  box-sizing: border-box;
+  display: block;
+  width: 678px;
+  padding: 0 12px;
+  border-collapse: collapse;
+}
+
+section th[colspan="2"] {
+  text-align: right;
+  border-top: none;
+  padding: 8px 0 2px 0;
+}
+
+section table tr,
+main > table tr {
+  border-top: 1px solid #000;
+}
+
+section table thead tr {
+  border-top: none;
+}
+
+section table tr td:first-of-type dl {
+  width: 500px;
+  padding: 0;
+  text-align: left;
+}
+
+section table tr td:last-child {
+  width: 178px;
+  text-align: right;
+  font-weight: 600;
+}
+
+section table tr td.indent dt,
+footer td.indent {
+  text-indent: 30px;
+  font-weight: 300;
+}
+
+div {
+  width: 20px;
+  padding: 12px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+p {
+  width: 640px;
+  padding: 12px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-align: left;
+  display: inline-block;
+  box-sizing: border-box;
+  
+}
+
+
+/* Vitamins */
+
+main > table tr:first-of-type {
+  border-top: 16px solid #000;
+}
+
+main > table tr:last-of-type {
+  border-bottom: 1px solid #000;
+
+}
+
+
+main > table tr td:first-of-type { 
+  width: 500px;
+  text-align: left;
+}
+main > table tr td:last-of-type { 
+  width: 178px;
+  text-align: right;
+}
+
+/* Footer */
+
+footer table {
+  width: 678px;
+  font-size: 1.5rem;
+}
+
+footer table thead {
+  border-bottom: 1px solid #000;
+}
+
+footer table th,
+footer table td {
+  width: 168px;
+  text-align: left;
+  font-weight: 300;
+}
+
+footer table tbody tr:last-of-type {
+  margin: 0 0 12px 0;
+}

@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+ ========================================
+ Web Store Styles Begin
+ ========================================
+*/
+
+html {
+  font: 28px normal Helvetica, Arial, sans-serif;
+  background: #ffd505;
+}
+
+body {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  width: 900px;
+  height: 105px;
+  background: #047ec1;
+  margin: 0 0 30px 0;
+  border-radius: 0 0 13px 13px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 900;
+  text-align: left;
+  padding: 26px 0 0 28px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 900;
+  text-align: left;
+  padding: 26px 0 0 0;
+}
+
+main {
+  width: 900px;
+  background: #ececec;
+  padding: 0 0 18px 18px;
+}
+
+main:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+figure {
+  width: 200px;
+  height: 235;
+  margin: 18px 0 0 18px;
+  padding: 15px 0 0 0;
+  background: #fff;
+  float: left;
+}
+
+section figure:first-of-type {
+  margin-left: 0;
+}
+
+img {
+  height: 140px;
+}
+
+dl {
+  text-align: left;
+  padding: 16px 0 16px 16px;
+}
+
+dt {
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+dd {
+  font-size: .75rem;
+  font-weight: 300;
+}
+
+/* Checkbox */
+
+input {
+  display: none;
+}
+
+#aurelia-overlay {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .2) url('images/aurelia.jpg') no-repeat;
+  background-position: center;
+  z-index: 100;
+}
+
+#polycaryum-overlay {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .2) url('images/polycaryum.jpg') no-repeat;
+  background-position: center;
+  z-index: 100;
+}
+
+#chlorelligerum-overlay {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .2) url('images/chlorelligerum.jpg') no-repeat;
+  background-position: center;
+  z-index: 100;
+}
+
+#sonneborni-overlay {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .2) url('images/sonneborni.jpg') no-repeat;
+  background-position: center;
+  z-index: 100;
+}
+
+#ugandae-overlay {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .2) url('images/ugandae.jpg') no-repeat;
+  background-position: center;
+  z-index: 100;
+}
+
+#woodruffi-overlay {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .2) url('images/woodruffi.jpg') no-repeat;
+  background-position: center;
+  z-index: 100;
+}
+
+
+input[id="aurelia"]:checked + #aurelia-overlay,
+input[id="polycaryum"]:checked + #polycaryum-overlay,
+input[id="chlorelligerum"]:checked + #chlorelligerum-overlay,
+input[id="sonneborni"]:checked + #sonneborni-overlay,
+input[id="ugandae"]:checked + #ugandae-overlay,
+input[id="woodruffi"]:checked + #woodruffi-overlay {
+  visibility: visible;
+}

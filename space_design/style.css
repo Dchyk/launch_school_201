@@ -1,0 +1,201 @@
+@import url('whitespace-reset.css');
+
+body {
+  font: 14px normal Helvetica, Arial, sans-serif;
+}
+
+/* Header Styles */
+
+header {
+  display: block;
+  width: 100%;
+  background: #2f2840 url('images/bg_body.gif') 50% 0;
+}
+
+header img {
+  display: block;
+  padding: 135px 0;
+  margin: 0 auto
+}
+
+header nav a {
+  font-size: 26px;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 25px;
+}
+
+header nav a.current {
+  font-weight: bold;
+}
+
+header nav ul {
+  text-align: center;
+  padding: 0 0 25px 0;
+}
+
+header nav li {
+  display: inline-block;
+}
+
+/* Body Styles */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 125px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  color: #45494d;
+  margin: 0 0 45px 0;
+}
+
+h3 {
+  font-size: 28px;
+  color: #3e59b2;
+  margin: 0 0 25px 0;
+}
+
+p {
+  padding: 0 40px;
+  font-size: 20px;
+  color: #45494d;
+}
+
+/* Projects page */
+
+h2.projects-header {
+  margin: 125px 0 0 0;
+  text-align: center;
+}
+
+figure {
+  margin: 0 0 125px 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  margin: 0 0 50px 0;
+}
+
+/* Team Page */
+
+dl {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+dd {
+  margin: 30px 0 0 0;
+  font-size: 24px;
+  color: #3e59b2;
+}
+
+p.team {
+  width: 775px;
+  margin: 0 auto;
+  margin-bottom: 140px;
+  padding: 0;
+}
+/* Footer */
+
+footer {
+  width: 100%;
+  background: #e7e7e7;
+  text-align: center;
+  padding: 90px 0 80px 0;
+}
+
+footer p {
+  color: #b2b2b2;
+  margin: 0 auto;
+  padding: 0 0 50px 0;
+}
+
+footer ul {
+  margin: 0 auto;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 64px;
+  margin: 0 auto;
+}
+
+footer nav li:last-child {
+  margin: 0;
+}
+
+footer nav a {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background: transparent url('images/icons_social-media.png') 0 0px;
+  background-size: 46px;
+}
+
+footer nav a.facebook {
+  background-position: 0 92px;
+}
+
+footer nav a.email {
+  background-position: 0 46px;
+}
+
+footer nav a.instagram {
+  background-position: 0 138px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  body {
+    padding-top: ;
+  }
+  header h1 {
+    width: 223px;
+    height: 182px;
+    margin: 0 auto 30px auto;
+  }
+  header img {
+    width: 100%;
+  }
+  nav {
+    padding-bottom: 20px;
+  }
+  main {
+    padding-top: 70px;
+  }
+  section {
+    padding-bottom: 50px;
+  }
+  section p {
+    padding: 0 40px;
+    text-align: justify;
+  }
+  footer li {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    float: left;
+  }
+  header nav {
+    text-align: right;
+  }
+  header nav li {
+    display: block;
+  }
+  footer li {
+    padding: 0 9px;
+  }
+}
